@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #689dc9;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 50vh;
+  }
+
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  }
+  
+  .grid-container {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 5.5fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "title"
+      "text"
+      "code"; 
+  }
+  .title { grid-area: title; }
+  .text { grid-area: text; }
+  .code { grid-area: code; }
+  
+  .title {
+    font-size: 3rem;
+  }
+
+  .text {
+    font-size: 0.5rem;
+  }
+
+  #ripple {
+    outline: none;
+    width: 100%;
+    height: 100%;
+  }
